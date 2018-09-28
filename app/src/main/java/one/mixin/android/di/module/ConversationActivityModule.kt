@@ -6,12 +6,13 @@ import one.mixin.android.ui.common.QrScanBottomSheetDialogFragment
 import one.mixin.android.ui.contacts.ProfileFragment
 import one.mixin.android.ui.conversation.ConversationFragment
 import one.mixin.android.ui.conversation.FriendsFragment
-import one.mixin.android.ui.sticker.StickerAddFragment
+import one.mixin.android.ui.conversation.GiphyFragment
 import one.mixin.android.ui.conversation.StickerAlbumFragment
 import one.mixin.android.ui.conversation.StickerFragment
-import one.mixin.android.ui.sticker.StickerManagementFragment
 import one.mixin.android.ui.group.GroupEditFragment
 import one.mixin.android.ui.group.GroupInfoFragment
+import one.mixin.android.ui.sticker.StickerAddFragment
+import one.mixin.android.ui.sticker.StickerManagementFragment
 import one.mixin.android.ui.wallet.TransactionFragment
 import one.mixin.android.ui.wallet.WalletPasswordFragment
 
@@ -52,4 +53,7 @@ abstract class ConversationActivityModule {
 
     @ContributesAndroidInjector
     internal abstract fun contributeStickerAddFragment(): StickerAddFragment
+
+    @ContributesAndroidInjector
+    internal abstract fun contributeGiphyFragment(): GiphyFragment
 }
